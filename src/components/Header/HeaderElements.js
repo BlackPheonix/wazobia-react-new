@@ -12,6 +12,10 @@ export const UpperHeader = styled.div`
 `
 
 export const UpperHeaderWrapper = styled.div`
+    padding: 0 2em;
+    max-width: 80rem;
+    margin: 0 auto;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -101,13 +105,18 @@ export const LowerHeader = styled.div`
 `
 
 export const LowerHeaderWrapper = styled.div`
+    padding: 0 2em;
+    max-width: 80rem;
+    margin: 0 auto;
+
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
     position: relative;
     overflow: hidden;
-    padding: 1rem 0;
+    padding-block: 1rem ;
 `
 
 export const MobileIcon = styled.button`
@@ -116,7 +125,7 @@ export const MobileIcon = styled.button`
     @media(max-width: 48em) {
         display: block;
         position: absolute;
-        right: 4rem;
+        right: 5rem;
         top: 2rem;
         background: transparent;
         background-image: url("../images/icon-hamburger.svg");

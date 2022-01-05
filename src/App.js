@@ -1,13 +1,7 @@
-import HeaderStyled from "./components/Header";
+import Home from "./Pages/Home/HomePage";
+import Courses from "./Pages/Courses/CoursePage";
+import AboutPage from "./Pages/About/AboutPage";
 import GlobalStyles from "./components/Global";
-import ShowCase from "./components/ShowCase";
-import Courses from "./components/Courses";
-import AboutSection from "./components/About";
-import TestimonialSection from "./components/Testimonial";
-import ContactFormSection from "./components/ContactForm"
-import PartnersSection from "./components/Partners"
-import FooterSection from "./components/Footer";
-
 
 
 
@@ -16,15 +10,10 @@ import FooterSection from "./components/Footer";
 function App() {
   return (
     <>
-      <GlobalStyles />
-      <HeaderStyled />
-      <ShowCase />
-      <Courses />
-      <AboutSection />
-      <TestimonialSection />
-      <ContactFormSection />
-      <PartnersSection />
-      <FooterSection />
+    <GlobalStyles />
+      {/* <Home />
+      <Courses /> */}
+      <AboutPage />
     </> 
   );
 }

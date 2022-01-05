@@ -1,6 +1,4 @@
 import React from 'react'
-import { Container } from '../ContainerElements';
-import { Flex } from '../FlexElements';
 import { PrimaryHeader, UpperHeader, UpperHeaderWrapper, HeaderContact, HeaderSocialLogin, LowerHeader, LowerHeaderWrapper, Logo, Nav, LoginButton, NavIcons, MobileIcon } from './HeaderElements';
 
 
@@ -9,7 +7,7 @@ function Header() {
     <>
         <PrimaryHeader>
             <UpperHeader>
-                <Container>
+            
                    <UpperHeaderWrapper>
                     <HeaderContact>
                         <a  href="mailto:coordinator@wazobia.academy"><i class="far fa-envelope"></i>coordinator@wazobia.academy</a>
@@ -28,11 +26,11 @@ function Header() {
                             </LoginButton>
                         </HeaderSocialLogin>
                    </UpperHeaderWrapper>
-                </Container>
+                
             </UpperHeader>
 
             <LowerHeader>
-                <Container> 
+              
                     <LowerHeaderWrapper>
                         <div>
                             <a t0='index'>
@@ -59,7 +57,7 @@ function Header() {
                             <i class="fas fa-shopping-cart"></i>
                         </NavIcons>
                     </LowerHeaderWrapper>
-                </Container>
+               
             </LowerHeader>
         </PrimaryHeader>
     </>
