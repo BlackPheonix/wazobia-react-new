@@ -80,6 +80,14 @@ const GlobalStyles = createGlobalStyle`
         height: auto;
     }
 
+    // Form Elements 
+    input,
+    button,
+    textarea,
+    select {
+        font: inherit;
+    }
+
     a {
         text-decoration: none;
         color: unset;

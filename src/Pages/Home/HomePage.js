@@ -8,6 +8,8 @@ import Header from '../../components/Header';
 import PartnersSection from '../../components/Partners';
 import ShowCase from '../../components/ShowCase';
 import TestimonialSection from '../../components/Testimonial';
+import { ButtonPrimaryAlt } from '../../components/Button';
+import { CourseBtn, CoursesList, SectionTitle } from '../../components/Courses/CoursesElements';
 
 
 function Home() {
@@ -16,7 +18,11 @@ function Home() {
             <GlobalStyles />
             <Header />
             <ShowCase />
-            <Courses />
+            <Courses>  
+                <CourseBtn>
+                    <ButtonPrimaryAlt>All Courses</ButtonPrimaryAlt>
+                </CourseBtn>
+            </Courses>
             <AboutSection />
             <TestimonialSection />
             <ContactFormSection />

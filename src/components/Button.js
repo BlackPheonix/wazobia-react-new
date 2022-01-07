@@ -37,3 +37,15 @@ export const ButtonPrimaryAlt = styled(Button)`
         background-color: hsl(var(--clr-primary-300) / 0.9 );
     }
 `
+
+export const ButtonAccent = styled(Button)`
+    color: hsl( var(--clr-primary-300) );
+    background-color: hsl(var(--clr-primary-400));
+    transition: all 0.2s;
+
+    &:hover,
+    &:focus-within {
+        color: hsl( var(--clr-neutral-300) );
+        background-color: hsl(var(--clr-primary-300));
+    }
+`

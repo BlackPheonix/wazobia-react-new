@@ -17,9 +17,9 @@ function Header() {
                         <HeaderSocialLogin>
                             <div>
                                 <p>Follow us :</p>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.facebook.com/academywazobia" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/wazobiaacademy/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/company/wazobia-academy/" target="_blank"><i class="fab fa-linkedin"></i></a>
                             </div>
                             <LoginButton>
                                 <a to="authentication.html">Login / SignUp</a>

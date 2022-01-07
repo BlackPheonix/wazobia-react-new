@@ -5,7 +5,7 @@ import media from '../Media'
 export const Footer = styled.div`
     color: hsl(var(--clr-neutral-300));
     background: hsl(var(--clr-primary-300));
-    font-size: var(--size-500);
+    font-size: var(--size-400);
 `
 
 export const FooterWrapper = styled.div`
@@ -22,7 +22,8 @@ export const FooterWrapper = styled.div`
 
     ${media.tablet`
         flex-direction: row;
-        gap: 4rem;
+        justify-content: space-between;
+        gap: 2rem;
     `}
 `
 
@@ -32,7 +33,7 @@ export const FooterCol = styled.div`
     gap: 1.5rem;
 
     h3 {
-        font-size: var(--size-600);
+        font-size: var(--size-500);
     }
 `
 

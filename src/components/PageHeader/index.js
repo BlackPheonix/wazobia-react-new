@@ -1,11 +1,12 @@
 import React from 'react'
 import { PageHeader, PageHeaderWrapper } from './PageHeaderElements'
 
-function PageHeaderSection() {
+function PageHeaderSection(props) {
+    const { children } = props;
     return (
         <PageHeader>
             <PageHeaderWrapper>
-                <h2>Course</h2>
+                { children }
             </PageHeaderWrapper>
         </PageHeader>
         

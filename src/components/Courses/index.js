@@ -2,12 +2,13 @@ import React from 'react'
 import { Button, ButtonPrimaryAlt } from '../Button'
 import { Course, CourseWrapper, SectionTitle, CoursesList, CoursesBox, CoursesPrice, CoursesBoxDetails, CourseBtn } from './CoursesElements'
 
-function Courses() {
+function Courses(props) {
+    const { children } = props;
     return (
         <Course>
             <CourseWrapper>
                 <SectionTitle>
-                    <h2>Our Courses</h2>
+                <h2>Our Courses</h2>
                     <p>Our training courses cover the man business of broadcasting and media writing, producting, directings , post production work, distribution and exploitation , animation etc</p>
                 </SectionTitle>
 
@@ -110,7 +111,7 @@ function Courses() {
                 </CoursesList>
 
                 <CourseBtn>
-                    <ButtonPrimaryAlt>All Courses</ButtonPrimaryAlt>
+                    { children }
                 </CourseBtn>
             </CourseWrapper>
         </Course>

@@ -1,22 +1,20 @@
 import React from 'react'
-import Courses from '../../components/Courses'
 import FooterSection from '../../components/Footer'
 import Header from '../../components/Header'
 import PageHeaderSection from '../../components/PageHeader'
+import FaqPageSection from './components/FaqSection'
 
-
-function Course() {
+function FaqPage() {
     return (
         <>
             <Header />
             <PageHeaderSection>
-                <h2>Courses</h2>
+                <h2>FAQ</h2>
             </PageHeaderSection>
-            
-            <Courses />
+            <FaqPageSection />
             <FooterSection />
         </>
     )
 }
 
-export default Course
+export default FaqPage

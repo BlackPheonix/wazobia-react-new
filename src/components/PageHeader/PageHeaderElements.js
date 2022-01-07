@@ -26,7 +26,7 @@ export const PageHeaderWrapper = styled.div`
     z-index: 100;
 
     h2 {
-        font-size: 4rem;
+        font-size: var(--size-900);
         color: hsl( var(--clr-neutral-300) );
         text-align: center;
     }
