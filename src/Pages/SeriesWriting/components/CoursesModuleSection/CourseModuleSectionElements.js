@@ -52,8 +52,7 @@ export const CourseModuleSummarySection = styled.div`
         flex-direction: column;
         position: sticky;
         top: 50px;
-        // height: 350px;
-        height: 350px;
+        height: ${props => props.height ? props.height : '350px'};
         gap: 1rem;
         width: 30%;
     `}
@@ -100,6 +99,10 @@ export const CourseModuleList = styled.div`
 `
 
 export const CoursePageModules = styled.div`
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 
     ${media.tablet`
         width: 100%;

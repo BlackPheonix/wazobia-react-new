@@ -18,6 +18,8 @@ export const CourseCtaWrapper = styled.div`
 
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     gap: 3rem;
 
     ${media.tablet`
@@ -33,6 +35,12 @@ export const CourseCtaWrapper = styled.div`
 `
 
 export const CourseCtaLearnToday = styled.div`
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
     h2 {
         font-size: 1.4rem;

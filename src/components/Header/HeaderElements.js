@@ -1,7 +1,12 @@
-import styled from "styled-components"
+import styled, {css} from "styled-components"
 
 export const PrimaryHeader = styled.header`
-    
+    position: relative;
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1;
 `
 
 export const UpperHeader = styled.div`
@@ -101,7 +106,7 @@ export const LoginButton = styled.div`
 
 
 export const LowerHeader = styled.div`
-    
+    background: #fff;
 `
 
 export const LowerHeaderWrapper = styled.div`
@@ -125,10 +130,10 @@ export const MobileIcon = styled.button`
     @media(max-width: 48em) {
         display: block;
         position: absolute;
-        right: 5rem;
+        right: 6rem;
         top: 2rem;
         background: transparent;
-        background-image: url("../images/icon-hamburger.svg");
+        background-image: ${props => props.navState ? `url("../images/icon-hamburger.svg")` : `url("../images/icon-hamburger.svg")`};
         background-repeat: no-repeat;
         background-position: center;
         width: 2rem;
@@ -142,6 +147,7 @@ export const MobileIcon = styled.button`
 export const Logo = styled.img`
     width: 5rem;
 `
+
 
 export const Nav = styled.nav`
     
@@ -165,15 +171,30 @@ export const Nav = styled.nav`
         width: 100%;
         padding: 2em;
         background: #fff;
-       
+
 
         opacity: 0;
-        transform: translateY(-130%);
+        transform: translateY(-130px);
         transition: all 0.3s ease-in;
+
+        ${props => props.navState && css`
+          opacity: 1;
+          transform: translateY(0);
+        `}
+
+        ul{
+            flex-direction: column;
+            align-items: center;
+
+            li {
+                width: 100%;
+                border-bottom: 1px solid hsl(var(--clr-primary-300) / 0.1);
+            }
+        }
     }
 `
 
 export const NavIcons = styled.div`
     display: flex;
-    gap: 0.8rem;
+    gap: 1rem;
 `

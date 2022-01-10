@@ -13,6 +13,8 @@ export const Showcase = styled.div`
     position: relative;
 
     display: flex;
+    flex-direction: column;
+    gap: 1rem;
     
 
     &::after {

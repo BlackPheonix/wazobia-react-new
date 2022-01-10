@@ -60,3 +60,4 @@ export const AccordionBodyContent = styled.div`
         font-size: 1.05rem;
     }
 `
+

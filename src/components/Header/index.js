@@ -1,8 +1,15 @@
-import React from 'react'
+import { useState } from 'react'
+import {Link} from 'react-router-dom';
 import { PrimaryHeader, UpperHeader, UpperHeaderWrapper, HeaderContact, HeaderSocialLogin, LowerHeader, LowerHeaderWrapper, Logo, Nav, LoginButton, NavIcons, MobileIcon } from './HeaderElements';
 
 
 function Header() {
+    const [toggleNav, setToggleNav] = useState(false);
+
+    const handleToggleNav = () => {
+        setToggleNav((prevToggleVal) => !prevToggleVal)
+    }
+
     return (
     <>
         <PrimaryHeader>
@@ -33,24 +40,26 @@ function Header() {
               
                     <LowerHeaderWrapper>
                         <div>
-                            <a t0='index'>
+                            <Link to='/'>
                             <Logo src="../images/wacademy-logo.png" alt="" />
-                            </a>
+                            </Link>
                         </div>
                         
-                        <MobileIcon aria-controls="primary-navigation"></MobileIcon>
+                        <MobileIcon aria-controls="primary-navigation" onClick={handleToggleNav} navState={toggleNav} />
 
-                        <Nav class="nav">
+                    
+                        <Nav navState={toggleNav}>
                             <ul role="list">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="course.html">Courses</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
-                                <li><a href="faq.html">Faq</a></li>
-                                <li><a href="my-account.html">My Account</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><Link to="/">Home</Link></li>
+                                <li><Link to="/course">Courses</Link></li>
+                                <li><Link to="/about">About</Link></li>
+                                <li><Link to="/gallery">Gallery</Link></li>
+                                <li><Link to="/faq">Faq</Link></li>
+                                <li><Link to="/my-account">My Account</Link></li>
+                                <li><Link to="/contact">Contact</Link></li>
                             </ul>
                         </Nav>
+                 
 
                         <NavIcons>
                             <i class="fas fa-search"></i>

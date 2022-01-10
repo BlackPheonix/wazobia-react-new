@@ -4,6 +4,7 @@ import Header from '../../components/Header'
 import PageHeaderSection from '../../components/PageHeader'
 import WazobiaProLabelSection from '../../components/WazobiaProLabel'
 import CourseCtaSection from './components/CourseCta'
+import CourseFaqSection from './components/CourseFaq'
 import CourseModuleSection from './components/CoursesModuleSection'
 import WazobiaProSection from './components/WazobiaProSection'
 
@@ -19,6 +20,7 @@ function SeriesWritingPage() {
            <CourseModuleSection />
            <CourseCtaSection />
            <WazobiaProSection />
+           <CourseFaqSection />
            <FooterSection />
         </>
     )

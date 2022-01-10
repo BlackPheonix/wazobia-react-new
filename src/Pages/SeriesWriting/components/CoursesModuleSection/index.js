@@ -24,11 +24,11 @@ function CourseModuleSection() {
 
                     </div>
                 </CourseModuleSummarySection>
-                <CoursePageModules>
 
+                <CoursePageModules>
                     <CoursePageModulesBox id="fundamentals">
                         <CourseModuleTitleBox>
-                            <div class="course-page__modules-title flex">
+                            <div>
                                 <i class="fas fa-male"></i>
                                 <h2 class="fs-400">Characters</h2>
                             </div>
